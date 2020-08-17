@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejercicio HTML</title>
+    <style>
+      table,
+      th,
+      td {
+        border: 1px solid black;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Daniel García</h1>
+      <img src="df-garcia.jpg" alt="Daniel García" width="100" height="110" />
+    </header>
+    <br />
+    <nav>
+      <a href="#bienvenida">Mensaje de Bienvenida</a> |
+      <a href="#biografia">Datos Biográficos</a> |
+      <a href="#academico">Datos Académicos</a> |
+      <a href="#interes">Sitios de interés</a> |
+      <a href="#contacto">Formulario de Contacto</a>
+    </nav>
+    <main>
+      <section id="bienvenida">
+        <h2>Mensaje de Bienvenida</h2>
+        <p>
+          Hola, bienvenido a mi página web personal, aquí encontrarás
+          información relevante como datos biográficos, académicos, sitios de
+          interés y un formulario de contacto.
+        </p>
+      </section>
+
+      <section id="biografia">
+        <h2>Datos Biográficos</h2>
+        <table>
+          <tr>
+            <th>Nombre</th>
+            <th>Fecha de nacimiento</th>
+            <th>Lugar de nacimiento</th>
+            <th>Lugar de residencia</th>
+          </tr>
+          <tr>
+            <td>Daniel García</td>
+            <td>06/02/2000</td>
+            <td>Neiva</td>
+            <td>Bogotá</td>
+          </tr>
+        </table>
+      </section>
+
+      <section id="academico">
+        <h2>Datos Académicos</h2>
+        <ul>
+          <li>
+            Universidad de Los Andes
+            <ul>
+              <li>Pregrado en Ingeniería Industrial (2016-2020)</li>
+              <li>
+                Pregrado en Ingeniería de Sistemas y Computación (2017-2020)
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </section>
+
+      <section id="interes">
+        <h2>Sitios de Interés</h2>
+        <p>
+          A continuación, podrás encontrar algunos videos y sitios de interés.
+        </p>
+        <div>
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/HyGb89YZ9-4"
+            frameborder="0"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+          <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/BKBx48g7mz4"
+            frameborder="0"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </div>
+        <div>
+          <br />
+          <p>Algunos enlaces de interés son:</p>
+          <ul>
+            <li>
+              <a href="http://www.uniandes.edu.co" target="_blank">Uniandes</a>
+            </li>
+            <li><a href="http://www.gitlab.com" target="_blank">Gitlab</a></li>
+          </ul>
+        </div>
+        <div>
+          <p>Por último, la imagen de un perro:</p>
+          <img
+            src="https://avatars2.githubusercontent.com/u/53870195?s=400&u=e597cbfb90029e7083ed80acfdafdf7d5d20c72a&v=4"
+          />
+        </div>
+      </section>
+      <section id="contacto">
+        <h2>Formulario de Contacto</h2>
+        <p>Dejame tus datos y te contactaré cuanto antes.</p>
+        <form>
+          <label for="fname">Nombre:</label><br />
+          <input type="text" id="fname" name="fname" /><br />
+          <label for="lname">Apellido:</label><br />
+          <input type="text" id="lname" name="lname" /><br />
+          <label for="email">Email:</label><br />
+          <input type="email" id="email" name="email" /><br /><br />
+          <button type="submit">Enviar</button>
+        </form>
+      </section>
+    </main>
+    <footer>
+      <p>Sigueme en mis redes sociales</p>
+      <a href="https://github.com/df-garcia">Github</a>
+      <a href="https://www.linkedin.com/in/df-garcia/">LinkedIn</a>
+      <p>&copy; Daniel García - 2020</p>
+    </footer>
+  </body>
+</html>
